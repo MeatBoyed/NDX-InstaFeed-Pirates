@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Next Entree
 
 Next.js 14+ starter template with app router, shadcn/ui, typesafe env, icons and configs setup.
@@ -56,3 +57,6 @@ pnpm format:check
 ```bash
 pnpm format
 ```
+=======
+# NDX-InstaFeed-Pirates
+>>>>>>> d3a9924 (Initial commit)
