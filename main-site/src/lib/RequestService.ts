@@ -1,8 +1,4 @@
-import {
-  InstaServicePayload,
-  InstaServiceResponse,
-  Pages,
-} from "@/app/api/insta-feed/route"
+import { InstaServicePayload, InstaServiceResponse, Pages } from "./utils"
 
 export async function AddInstaPost({
   posts,

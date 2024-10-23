@@ -10,11 +10,7 @@ import {
 import { toast } from "sonner"
 
 import { AddInstaPost, GetInstaPosts } from "@/lib/RequestService"
-import {
-  InstaServicePayload,
-  InstaServiceResponse,
-  Pages,
-} from "@/app/api/insta-feed/route"
+import { Pages } from "@/lib/utils"
 
 interface InstaPostContextType {
   posts: string[]

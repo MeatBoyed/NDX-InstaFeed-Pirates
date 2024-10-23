@@ -3,8 +3,8 @@ import { db } from "@/db/db"
 import { InstagramFeed } from "@/db/schema"
 import { eq } from "drizzle-orm"
 import { z } from "zod"
+import { pagesEnum } from "@/lib/utils"
 
-import { pagesEnum } from "../../insta-feed/route"
 
 const queryPayload = z.object({
   index: z.coerce.number(),
@@ -14,7 +14,7 @@ const AddPostResponse = z.object({
   post: z.string().url(),
 })
 // export type InstaServicePayload = z.infer<typeof payloadSchema>
-export type InstaServiceResponse = z.infer<typeof AddPostResponse>
+type InstaServiceResponse = z.infer<typeof AddPostResponse>
 
 export async function GET(
   req: NextRequest
