@@ -4,7 +4,7 @@ import { InstagramFeed } from "@/db/schema"
 import { eq } from "drizzle-orm"
 import { z } from "zod"
 
-const pagesEnum = z.enum(["home", "contact", "about"])
+export const pagesEnum = z.enum(["home", "contact", "about"])
 export type Pages = z.infer<typeof pagesEnum>
 
 const payloadSchema = z.object({
@@ -90,4 +90,3 @@ export async function POST(
     )
   }
 }
-
